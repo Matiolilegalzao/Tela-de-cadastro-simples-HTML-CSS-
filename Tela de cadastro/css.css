@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+}
+body {
+
+	background-size: cover;
+	background-image: url(background.jpg)
+}
+
+#form {
+	position: relative;
+	margin-top: 25%;
+	left: 50%;
+	color: rgb(13, 16, 70);
+	background-color: white;
+	font-family: 'Poppins', sans-serif;
+	width: min-content;
+	border-radius: 15px;
+	padding: 40px;
+	transform: translate(-50%, -50%); /* ajuda a centralizar o form */
+	animation: Iniciar 2s ease-out;
+	pointer-events: all;
+	box-shadow: 3px 3px; /* Sombra do form */
+}
+.input{
+	min-width: 250px;
+	border: 2px solid;
+	border-radius: 12px;
+	padding: 4px;
+	margin: 0px 0px 10px 0px;
+	-webkit-text-fill-color: purple;
+}
+.input input{
+	width: 80%;
+	font-family: 'Poppins', sans-serif;
+	border: 0;		/* Tira as bordas feias na hora de digitar */
+	outline: 0;     /* Tira as bordas feias na hora de digitar */
+	transform: translateY(-11%);
+}
+.botao{
+	margin-top: 15%;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	background-color: purple;
+	border: none;
+	width: 100%;
+	height: 40px;
+	border-radius: 20px;
+}
+.botao button{
+	font-family: 'Poppins', sans-serif;
+	background-color: purple;
+	border: 0;
+	color: white;
+	font-size: 1.2em;
+	height: 40px;
+	width: 100%;
+	border-radius: 20px;
+	text-align: center;
+	outline: none;
+	cursor: pointer; /* Cursor aparece como elemento clicável */
+}
+.botao button:hover{ /* Deixa o botão animado quando o cursor passa por cima */
+	background:rgb(112, 0, 112);
+}
+h2{
+	display: flex;
+	justify-content: center; /* centraliza o texto h2. */
+}
+@keyframes Iniciar{
+	0%{
+		top: -20%;
+		opacity: 0;
+		pointer-events: none;
+	}
+	100%{
+		top: 50%;
+		opacity: 100%;
+		pointer-events: all;
+		
+
+	}
+}
